@@ -175,10 +175,74 @@ a.profile {
   background-color: rgb(255, 255, 255);
 }
 
-/* fFOOTER */
+/* FOOTER */
 .footer {
   display: flex;
   width: 100%;
   height: 90px;
   background-color: rgb(40, 40, 40);
+}
+.flex_footer_box {
+  display: flex;
+  padding: 10px;
+}
+.footer_col_left,
+.footer_col_right {
+  width: 25%;
+}
+/* footer colonna sinistra */
+.footer_col_left {
+  align-items: center;
+}
+.footer_col_left img {
+  height: 50px;
+}
+.footer_song {
+  padding-right: 15px;
+}
+.footer_song_name h4 {
+  font-size: 0.8em;
+  color: rgb(255, 255, 255);
+}
+.footer_song_name h5 {
+  font-size: 0.6em;
+  color: rgb(126, 126, 126);
+}
+.footer_song_name {
+  padding-right: 40px;
+}
+.footer_song_save a {
+  text-decoration: none;
+  color: rgb(126, 126, 126);
+  padding-right: 8px;
+  transition: 2s;
+}
+.footer_song_save a:hover i {
+  color: rgb(255, 255, 255);
+  transform: scale(1.5);
+}
+/* footer colonna centrale */
+.footer_col_center {
+  width: 50%;
+}
+/* footer colonna destra */
+.footer_col_right {
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer_col_right a {
+  padding-right: 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.volume_bar {
+  display: inline;
+  height: 5px;
+  width: 120px;
+  background-color: rgb(126, 126, 126);;
+}
+.volume_bar_small {
+  height: 100%;
+  width: 35%;
+  background-color: rgb(255, 255, 255);;
 }
