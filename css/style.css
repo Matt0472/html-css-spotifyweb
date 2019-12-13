@@ -13,7 +13,6 @@ body {
 .wrapper {
   width: 100%;
   height: 100vh;
-  background-color: red;
 }
 
 /* MAIN */
@@ -215,7 +214,7 @@ a.profile {
   text-decoration: none;
   color: rgb(126, 126, 126);
   padding-right: 8px;
-  transition: 2s;
+  transition: 1s;
 }
 .footer_song_save a:hover i {
   color: rgb(255, 255, 255);
@@ -224,6 +223,54 @@ a.profile {
 /* footer colonna centrale */
 .footer_col_center {
   width: 50%;
+}
+.player {
+  width: 100%;
+}
+.player_buttons {
+  text-align: center;
+}
+.player_buttons a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding-right: 10px;
+  font-size: 1.1em;
+  line-height: 25px;
+  vertical-align: middle;
+  transition: 1s;
+}
+a.play {
+  font-size: 1.8em;
+}
+.player_buttons a:hover i {
+  transform: scale(1.5);
+}
+.time_bar_container {
+  text-align: center;
+  line-height: 30px;
+}
+.time,
+.time_bar {
+  display: inline-block;
+}
+.time p {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-size: 0.5em;
+  line-height: 16px;
+}
+.time_bar {
+  height: 3px;
+  width: 80%;
+  margin: 0 10px;
+  background-color: rgb(126, 126, 126);
+  border-radius: 10px;
+}
+.time_bar_small {
+  height: 100%;
+  width: 20%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
 }
 /* footer colonna destra */
 .footer_col_right {
@@ -239,10 +286,12 @@ a.profile {
   display: inline;
   height: 5px;
   width: 120px;
-  background-color: rgb(126, 126, 126);;
+  background-color: rgb(126, 126, 126);
+  border-radius: 10px;
 }
 .volume_bar_small {
   height: 100%;
   width: 35%;
-  background-color: rgb(255, 255, 255);;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
 }
