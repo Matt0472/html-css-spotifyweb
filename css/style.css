@@ -30,10 +30,10 @@ body {
   justify-content: space-between;
   width: 280px;
   height: 100%;
-  background: blue;
+  background: black;
 }
+/* main-nav-header */
 .main-nav-header {
-  background-color: purple;
   padding: 20px;
 }
 .main_logo {
@@ -58,31 +58,78 @@ body {
   height: 16px;
   vertical-align: text-bottom;
 }
+
+/* main playlist */
+.create_playlist {
+  padding: 0 20px;
+}
+.create_playlist h2 {
+  color: rgb(255, 255, 255);
+  font-size: 0.9em;
+}
+.create_playlist a {
+  display: inline-block;
+  margin-top: 5px;
+  text-decoration: none;
+  color: rgb(163, 163, 163);
+  line-height: 2em;
+  font-size: 0.8em;
+}
+.create_playlist a span {
+  font-size: 3em;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+/* main-nav-main */
 .main-nav-main {
   min-height: 150px;
+  padding: 0 20px;
   overflow-y: auto;
   flex-grow: 2;
-  background-color: lime;
 }
 .playlist {
   list-style: none;
 }
-.main-nav-footer {
-  background-color: brown;
+.playlist li {
+  margin-top: 9px;
 }
-
-/* main playlist */
-.create_playlist a {
+.playlist li a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
-  line-height: 2em;
+  color: rgb(163, 163, 163);
 }
-.create_playlist a span {
-  font-size: 2em;
-  margin-right: 5px;
-  vertical-align: middle;
+/* main-nav-footer */
+.main-nav-footer {
+  padding: 0 20px;
 }
-
+.main-nav-footer a {
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: rgb(163, 163, 163);
+  font-size: 0.8em;
+}
+.main-nav-footer a span {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+hr {
+  border-color: rgb(163, 163, 163);
+}
+a.profile {
+  color: white;
+  font-weight: bold;
+}
+.profile span {
+  border: 1px solid white;
+  padding: 2px 5px;
+  border-radius: 50%;
+  vertical-align: sub;
+  background-color: rgb(163, 163, 163);
+}
+.profile span img {
+  height: 20px;
+}
 /* main content */
 .main-content {
   width: calc(100% - 280px);
