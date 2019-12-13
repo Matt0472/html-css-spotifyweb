@@ -28,7 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 320px;
+  width: 280px;
   height: 100%;
   background: blue;
 }
@@ -36,7 +36,7 @@ body {
   background-color: purple;
   padding: 20px;
 }
-.main-nav-header a img {
+.main_logo {
   width: 50%;
 }
 .main-nav-header ul {
@@ -51,6 +51,12 @@ body {
 .main-nav-header ul li a {
   text-decoration: none;
   color: rgb(163, 163, 163);
+  font-size: 0.8em;
+  line-height: 20px;
+}
+.main-nav-header ul li a img {
+  height: 16px;
+  vertical-align: text-bottom;
 }
 .main-nav-main {
   min-height: 150px;
@@ -65,9 +71,21 @@ body {
   background-color: brown;
 }
 
+/* main playlist */
+.create_playlist a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  line-height: 2em;
+}
+.create_playlist a span {
+  font-size: 2em;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
 /* main content */
 .main-content {
-  width: calc(100% - 320px);
+  width: calc(100% - 280px);
   height: 100%;
   padding-top: 90px;
   background-color: orange;
@@ -80,7 +98,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: calc(100% - 320px);
+  width: calc(100% - 280px);
   height: 90px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.71);
@@ -95,8 +113,10 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
+  transition: 1s;
 }
 .btn:hover {
+  transform: scale(1.1);
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 }
