@@ -140,9 +140,15 @@ a.profile {
 .main-content {
   width: calc(100% - 280px);
   height: 100%;
-  padding-top: 90px;
+  padding: 100px 0 0 20px;
   background-color: rgb(18, 18, 18);
   overflow-y: scroll;
+}
+.main-content h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.6em;
+  color: rgb(255, 255, 255);
 }
 .call-to-action {
   position: fixed;
@@ -173,7 +179,77 @@ a.profile {
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 }
-
+p.more_listen {
+  color: rgb(126, 126, 126);
+  font-size: 0.8em;
+}
+.find {
+  width: 100%;
+  text-align: center;
+}
+.find ul {
+  list-style: none;
+}
+.find ul li {
+  display: inline-block;
+  padding-right: 20px;
+}
+.find ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8em;
+  color: rgb(126, 126, 126);
+  text-transform: uppercase;
+}
+.find ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+.find a::after {
+  display: block;
+  content: '';
+  height: 3px;
+  width: 20px;
+}
+a.line_bottom::after {
+  display: block;
+  content: '';
+  height: 3px;
+  width: 30px;
+  background-color: rgb(30, 215, 96);
+  margin: 0 auto;
+}
+.recently,
+.create_for_you,
+.popular_artist {
+  display: flex;
+  flex-wrap: wrap;
+}
+.album_container {
+  flex-basis: calc(100% / 6);
+  overflow: hidden;
+}
+.album,
+.album_title {
+  padding: 10px 20px 10px 0;
+}
+.album_title {
+  text-align: center;
+}
+.album_title a {
+  display: block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-bottom: 8px;
+}
+a.artist_name {
+  font-size: 0.6em;
+  color: rgb(126, 126, 126);
+}
+.album img {
+  width: 100%;
+}
 /* FOOTER */
 .footer {
   display: flex;
