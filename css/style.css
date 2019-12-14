@@ -378,10 +378,26 @@ a.play {
   border-radius: 10px;
 }
 .time_bar_small {
+  position: relative;
   height: 100%;
   width: 20%;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
+}
+.time_bar_small::after {
+  position: absolute;
+  top: -6px;
+  right: 0;
+  display: none;
+  content: '';
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+}
+.time_bar_small:hover::after {
+  display: block;
+  cursor: pointer;
 }
 /* footer colonna destra */
 .footer_col_right {
@@ -401,8 +417,24 @@ a.play {
   border-radius: 10px;
 }
 .volume_bar_small {
+  position: relative;
   height: 100%;
   width: 35%;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
+}
+.volume_bar_small::after {
+  position: absolute;
+  top: -6px;
+  right: 0;
+  display: none;
+  content: '';
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+}
+.volume_bar_small:hover::after {
+  display: block;
+  cursor: pointer;
 }
