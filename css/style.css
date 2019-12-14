@@ -396,6 +396,9 @@ a.play {
   border-radius: 10px;
   cursor: pointer;
 }
+.time_bar_small:hover {
+  background-color: rgb(72, 214, 5);
+}
 .time_bar_small::after {
   position: absolute;
   top: -6px;
@@ -436,6 +439,9 @@ a.play {
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   cursor: pointer;
+}
+.volume_bar_small:hover {
+  background-color: rgb(72, 214, 5);
 }
 .volume_bar_small::after {
   position: absolute;
