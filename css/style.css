@@ -8,6 +8,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
+  min-width: 500px;
 }
 /* utility */
 .wrapper {
@@ -19,7 +20,12 @@ body {
 }
 a {
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
 }
+a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
 ul {
   list-style: none;
 }
@@ -57,97 +63,60 @@ ul {
   vertical-align: middle;
   opacity: 0.6;
 }
-.main-nav-list li a {
-  color: rgb(255, 255, 255);
-}
 .main-nav-list li a:hover img {
   opacity: 1;
-}
-/* main playlist */
-.create_playlist {
-  padding: 0 20px;
-}
-.create_playlist h2 {
-  color: rgb(255, 255, 255);
-  font-size: 0.9em;
-}
-.create_playlist a {
-  display: inline-block;
-  margin-top: 5px;
-  text-decoration: none;
-  color: rgb(126, 126, 126);
-  line-height: 2em;
-  font-size: 0.8em;
-}
-.create_playlist a p {
-  display: inline-block;
-}
-.create_playlist a span {
-  font-size: 3em;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-.create_playlist a:hover {
-  color: rgb(255, 255, 255);
 }
 
 /* main-nav-main */
 .main-nav-main {
-  min-height: 150px;
-  padding: 0 20px;
-  overflow-y: auto;
   flex-grow: 2;
+  padding: 0 12px;
+  min-height: 150px;
+  overflow-y: auto;
 }
-.playlist {
-  list-style: none;
+.create_playlist h2 {
+  margin: 15px 0;
+  color: rgb(255, 255, 255);
+  font-size: 0.9em;
 }
 .playlist li {
-  margin-top: 9px;
+  margin-top: 12px;
 }
-.playlist li a {
-  text-decoration: none;
-  color: rgb(126, 126, 126);
+i.fa-plus-square {
+  font-size: 40px;
+  vertical-align: middle;
 }
-.playlist a:hover {
-  color: rgb(255, 255, 255);
-}
+
 /* main-nav-footer */
 .main-nav-footer {
-  padding: 0 20px;
+  padding: 0 12px;
 }
-.main-nav-footer a {
-  display: inline-block;
-  margin-bottom: 10px;
-  color: rgb(126, 126, 126);
-  font-size: 0.8em;
+.main-nav-footer-top,
+.main-nav-footer-bottom {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
 }
-.main-nav-footer a p {
-  display: inline-block;
+.main-nav-footer-top {
+  border-bottom: 1px solid rgb(133, 133, 133);
 }
-.main-nav-footer a:hover {
-  color: rgb(255, 255, 255);
-}
-.main-nav-footer a span {
-  display: inline-block;
-  margin-top: 10px;
+.main-nav-footer-top i {
   margin-right: 10px;
 }
-hr {
-  border-color: rgb(126, 126, 126);
+.main-nav-footer-bottom img {
+  height: 20px;
 }
-a.profile {
-  color: white;
+.main-nav-footer-bottom span {
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
-.profile span {
-  border: 1px solid white;
-  padding: 2px 5px;
+.main-nav-footer-bottom .avatar_profile {
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
-  vertical-align: sub;
-  background-color: rgb(126, 126, 126);
-}
-.profile span img {
-  height: 20px;
+  text-align: center;
+  background-color: rgb(133, 133, 133);
+  margin-right: 10px;
 }
 /* main content */
 .main-content {
@@ -290,17 +259,12 @@ a.artist_name {
   justify-content: space-between;
   width: 100%;
   height: 90px;
-  background-color: rgb(40, 40, 40);
-}
-.flex_footer_box {
-  display: flex;
   padding: 10px;
+  background-color: rgb(40, 40, 40);
 }
 
 /* footer colonna sinistra */
-.footer_col_left {
-  align-items: center;
-}
+
 .footer_col_left img {
   height: 50px;
 }

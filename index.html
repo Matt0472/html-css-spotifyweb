@@ -27,11 +27,11 @@
               <li><a href="#"><img src="img/libreria.svg" alt=""> LA TUA LIBRERIA</a></li>
             </ul>
           </section>
-          <section class="create_playlist">
-            <h2>PLAYLIST</h2>
-            <a href="#"><span><i class="fas fa-plus-square"></i></span><p class="display_none">Crea Playlist</p></a>
-          </section>
           <section class="main-nav-main">
+            <section class="create_playlist">
+              <h2>PLAYLIST</h2>
+              <a href="#"><i class="fas fa-plus-square"></i> Crea Playlist</a>
+            </section>
             <ul class="playlist">
               <li><a href="">Nome Playlist</a></li>
               <li><a href="">Nome Playlist</a></li>
@@ -44,9 +44,17 @@
             </ul>
           </section>
           <section class="main-nav-footer">
-            <a href="#"><span><i class="fas fa-arrow-circle-down"></i></span><p>Installa app</p></a>
-            <hr class="display_none">
-            <a class="profile" href="#"><span><img src="img/profile.svg" alt=""></span><p>Mattia Pedone</p></a>
+            <div class="main-nav-footer-top">
+              <a href="#">
+                <i class="fas fa-arrow-circle-down"></i> <span>Installa app</span>
+              </a>
+            </div>
+            <div class="main-nav-footer-bottom">
+              <span class="avatar_profile">
+                <img src="img/profile.svg" alt="">
+              </span>
+              <span>Mattia Pedone</span>
+            </div>
           </section>
         </section>
         <section class="main-content">
@@ -219,7 +227,6 @@
 
       <!-- footer -->
       <footer class="footer">
-        <div class="flex_footer_box footer_col_left">
           <div class="footer_song">
             <img src="img/sinister.jpeg" alt="">
           </div>
@@ -231,8 +238,7 @@
             <a href="#"><i class="far fa-heart"></i></a>
             <a href="#"><i class="far fa-folder"></i></a>
           </div>
-        </div>
-        <div class="flex_footer_box footer_col_center">
+
           <div class="player">
             <div class="player_buttons">
               <a href="#"><i class="fas fa-random"></i></a>
@@ -253,8 +259,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="flex_footer_box footer_col_right">
+
+        <div class="volume">
           <a href="#"><i class="fas fa-list"></i></a>
           <a href="#"><i class="fas fa-desktop"></i></a>
           <a href="#"><i class="fas fa-volume-up"></i></a>
