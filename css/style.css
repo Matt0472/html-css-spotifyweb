@@ -264,12 +264,13 @@ a.artist_name {
 }
 
 /* footer colonna sinistra */
-
-.footer_col_left img {
-  height: 50px;
+.play {
+  display: flex;
+  align-items: center;
 }
-.footer_song {
-  padding-right: 15px;
+.footer_song img {
+  width: 50px;
+  margin-right: 15px;
 }
 .footer_song_name h4 {
   font-size: 0.8em;
@@ -293,42 +294,41 @@ a.artist_name {
 }
 /* footer colonna centrale */
 .player {
-  width: 100%;
+  width: 45%;
 }
 .player_buttons {
-  text-align: center;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+i.fa-play-circle {
+  font-size: 1.6em;
 }
 .player_buttons a {
   color: rgb(255, 255, 255);
-  padding-right: 10px;
+  margin-right: 10px;
   font-size: 1.1em;
-  line-height: 25px;
-  vertical-align: middle;
   transition: 1s;
-}
-a.play {
-  font-size: 1.8em;
 }
 .player_buttons a:hover i {
   transform: scale(1.5);
 }
 .time_bar_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.time_bar_container .time {
+  width: 10%;
   text-align: center;
-  line-height: 30px;
-}
-.time,
-.time_bar {
-  display: inline-block;
-}
-.time p {
-  display: inline-block;
+  font-size: 0.7em;
   color: rgb(255, 255, 255);
-  font-size: 0.5em;
-  line-height: 16px;
 }
-.time_bar {
-  height: 3px;
-  width: 400px;
+.time_bar_container .time_bar {
+  width: 80%;
+  height: 5px;
   background-color: rgb(126, 126, 126);
   border-radius: 10px;
   cursor: pointer;
@@ -360,18 +360,19 @@ a.play {
   cursor: pointer;
 }
 /* footer colonna destra */
-.footer_col_right {
-  justify-content: flex-end;
+.volume {
+  display: flex;
   align-items: center;
+  width: 20%;
+  justify-content: flex-end;
 }
-.footer_col_right a {
-  padding-right: 10px;
+.volume a {
+  margin-right: 10px;
   color: rgb(255, 255, 255);
 }
 .volume_bar {
-  display: inline;
   height: 5px;
-  width: 120px;
+  width: 50%;
   background-color: rgb(126, 126, 126);
   border-radius: 10px;
   cursor: pointer;
