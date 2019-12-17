@@ -179,28 +179,23 @@ i.fa-plus-square {
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 }
-p.more_listen {
-  color: rgb(126, 126, 126);
-  font-size: 0.8em;
+.find_list {
+  display: flex;
+  justify-content: center;
 }
-.find {
-  width: 100%;
-  text-align: center;
+.find_list li {
+  padding: 7px;
 }
-.find ul li {
-  display: inline-block;
-  padding-right: 20px;
-}
-.find ul li a {
+.find_list li a {
   font-weight: bold;
   font-size: 0.7em;
   color: rgb(126, 126, 126);
   text-transform: uppercase;
 }
-.find ul li a:hover {
+.find_list li a:hover {
   color: rgb(255, 255, 255);
 }
-.find a::after {
+.find_list a::after {
   display: block;
   content: '';
   height: 3px;
@@ -214,8 +209,40 @@ a.line_bottom::after {
   background-color: rgb(30, 215, 96);
   margin: 0 auto;
 }
+@media screen and (max-width: 1100px) {
+  .find_list {
+    flex-wrap: wrap;
+  }
+  .find_list li {
+    padding: 0;
+    width: calc((100% / 5) - 10px);
+  }
+  a.line_bottom::after {
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 815px) {
+  .find_list {
+    flex-wrap: wrap;
+  }
+  .find_list li {
+    width: calc((100% / 3) - 10px);
+  }
+}
+@media screen and (max-width: 550px) {
+  .find_list {
+    flex-wrap: wrap;
+  }
+  .find_list li {
+    width: calc((100% / 4) - 10px);
+  }
+}
+
 .album_list {
   display: flex;
+}
+.album_list.create li {
+  width: calc(100% / 6);
 }
 .album_list li {
   padding: 10px;
@@ -227,8 +254,13 @@ a.line_bottom::after {
   display: block;
   width: 100%;
 }
+
+.circle_img  img {
+  border-radius: 50%;
+}
 .album_title {
   text-align: center;
+  margin-top: 15px;
 }
 .album_title h3 {
   color: rgb(255, 255, 255);
@@ -244,6 +276,9 @@ a.line_bottom::after {
   opacity: 0;
   color: rgb(255, 255, 255);
   font-size: 1.8em;
+}
+.circle_overlay {
+  border-radius: 50%;
 }
 .overlay_icon {
   position: absolute;
@@ -262,7 +297,8 @@ a.line_bottom::after {
   .album_list {
     flex-wrap: wrap;
   }
-  .album_list li {
+  .album_list li,
+  .album_list.create li {
     width: calc(100% / 4);
   }
 }
@@ -270,7 +306,8 @@ a.line_bottom::after {
   .album_list {
     flex-wrap: wrap;
   }
-  .album_list li {
+  .album_list li,
+  .album_list.create li {
     width: calc(100% / 2);
   }
 }
