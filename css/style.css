@@ -316,6 +316,9 @@ a.line_bottom::after {
 .circle_img {
   border-radius: 100px;
 }
+.popular_artist h3 {
+  color: rgba(255, 255, 255, 0.5);
+}
 @media screen and (max-width: 1100px) {
   .album_list {
     flex-wrap: wrap;
