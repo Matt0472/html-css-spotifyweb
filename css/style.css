@@ -42,7 +42,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 280px;
+  width: 210px;
   height: 100%;
   background: rgb(4, 4, 4);
 }
@@ -126,7 +126,7 @@ i.fa-plus-square {
 }
 /* main content */
 .main-content {
-  width: calc(100% - 280px);
+  width: calc(100% - 210px);
   height: 100%;
   padding-top: 100px;
   padding-left: 20px;
@@ -153,7 +153,7 @@ i.fa-plus-square {
   z-index: 1030;
   justify-content: flex-end;
   align-items: center;
-  width: calc(100% - 280px);
+  width: calc(100% - 210px);
   height: 90px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.71);
@@ -221,7 +221,10 @@ a.line_bottom::after {
   }
   .find_list li {
     padding: 0;
-    width: calc((100% / 5) - 10px);
+    width: calc(100% / 5);
+  }
+  .find_list li a {
+    font-size: 0.6em;
   }
   a.line_bottom::after {
     margin: 0 20px;
@@ -232,7 +235,7 @@ a.line_bottom::after {
     flex-wrap: wrap;
   }
   .find_list li {
-    width: calc((100% / 3) - 10px);
+    width: calc(100% / 3);
   }
 }
 @media screen and (max-width: 550px) {
@@ -308,6 +311,12 @@ a.line_bottom::after {
   .album_list.create li {
     width: calc(100% / 4);
   }
+  .album_title h3 {
+    font-size: 0.9em;
+  }
+  .album_title h4 {
+    font-size: 0.8em;
+  }
 }
 @media screen and (max-width: 740px) {
   .album_list {
@@ -316,6 +325,12 @@ a.line_bottom::after {
   .album_list li,
   .album_list.create li {
     width: calc(100% / 2);
+  }
+  .album_title h3 {
+    font-size: 0.8em;
+  }
+  .album_title h4 {
+    font-size: 0.7em;
   }
 }
 /* FOOTER */
@@ -360,6 +375,7 @@ a.line_bottom::after {
 /* footer colonna centrale */
 .player {
   width: 45%;
+  padding: 10px;
 }
 .player_buttons {
   font-size: 18px;
@@ -374,7 +390,6 @@ i.fa-play-circle {
 .player_buttons a {
   color: rgb(255, 255, 255);
   margin-right: 10px;
-  font-size: 1.1em;
   transition: 1s;
 }
 .player_buttons a:hover i {
@@ -467,4 +482,65 @@ i.fa-play-circle {
 .volume_bar_small:hover::after {
   display: block;
   cursor: pointer;
+}
+@media screen and (max-width: 1100px) {
+  .footer_song_name {
+    padding-right: 20px;
+}
+  i.fa-play-circle {
+    font-size: 1.4em;
+  }
+  .player_buttons a {
+    font-size: 0.8em;
+  }
+  .time_bar_container .time_bar {
+    width: 65%;
+  }
+  .time_bar_small {
+    width: 15%;
+  }
+  .time_bar_container .time {
+    font-size: 0.6em;
+  }
+  .volume_bar {
+    width: 35%;
+  }
+  .volume_bar_small {
+    width: 25%;
+  }
+  .volume a i {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 740px) {
+  .footer_song_name {
+    padding-right: 15px;
+}
+  i.fa-play-circle {
+    font-size: 1.3em;
+  }
+  .player_buttons {
+    margin-bottom: 15px;
+}
+  .player_buttons a {
+    font-size: 0.7em;
+  }
+  .time_bar_container .time_bar {
+    width: 60%;
+  }
+  .time_bar_small {
+    width: 10%;
+  }
+  .time_bar_container .time {
+    font-size: 0.5em;
+  }
+  .volume_bar {
+    width: 25%;
+  }
+  .volume_bar_small {
+    width: 35%;
+  }
+  .volume a i {
+    font-size: 0.7em;
+  }
 }
