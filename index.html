@@ -19,15 +19,16 @@
         <section class="main-nav">
           <section class="main-nav-header">
             <a class="logo_link" href="#">
-              <img class="main_logo" src="img/logo.svg" alt="spotify logo">
+              <img class="main_logo hidden_xs" src="img/logo.svg" alt="spotify logo">
+              <img class="main_logo_xs display_none_lg visible_xs" src="img/logo-small.svg" alt="">
             </a>
             <ul class="main-nav-list">
-              <li class="active"><a href="#"><img src="img/home.svg" alt=""> HOME</a></li>
-              <li><a href="#"><img src="img/search.svg" alt=""> CERCA</a></li>
-              <li><a href="#"><img src="img/libreria.svg" alt=""> LA TUA LIBRERIA</a></li>
+              <li class="active"><a href="#"><img src="img/home.svg" alt=""> <span class="hidden_xs">HOME</span></a></li>
+              <li><a href="#"><img src="img/search.svg" alt=""><span class="hidden_xs">CERCA</span> </a></li>
+              <li><a href="#"><img src="img/libreria.svg" alt=""><span class="hidden_xs">LA TUA LIBRERIA</span></a></li>
             </ul>
           </section>
-          <section class="main-nav-main">
+          <section class="main-nav-main hidden_xs">
             <section class="create_playlist">
               <h2>PLAYLIST</h2>
               <a href="#"><i class="fas fa-plus-square"></i> Crea Playlist</a>
@@ -46,14 +47,14 @@
           <section class="main-nav-footer">
             <div class="main-nav-footer-top">
               <a href="#">
-                <i class="fas fa-arrow-circle-down"></i> <span>Installa app</span>
+                <i class="fas fa-arrow-circle-down"></i> <span class="hidden_xs">Installa app</span>
               </a>
             </div>
             <div class="main-nav-footer-bottom">
               <span class="avatar_profile">
                 <img src="img/profile.svg" alt="">
               </span>
-              <span>Mattia Pedone</span>
+              <span class="hidden_xs">Mattia Pedone</span>
             </div>
           </section>
         </section>
