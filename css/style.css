@@ -252,6 +252,7 @@ a.line_bottom::after {
 }
 .album_list li {
   padding: 10px;
+  width: calc(100% / 6);
 }
 .album_container {
   position: relative;
