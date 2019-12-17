@@ -18,6 +18,7 @@ body {
 .display_none_lg {
   display: none;
 }
+
 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
@@ -164,7 +165,6 @@ i.fa-plus-square {
 }
 .btn {
   display: inline-block;
-  font-size: 20px;
   padding: 10px 30px;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 50px;
@@ -173,6 +173,12 @@ i.fa-plus-square {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
   transition: 1s;
+}
+@media screen and (max-width: 550px) {
+  .btn {
+    font-size: 0.6em;
+    padding: 5px 15px;
+  }
 }
 .btn:hover {
   transform: scale(1.1);
