@@ -230,6 +230,12 @@ a.line_bottom::after {
 .album_title {
   text-align: center;
 }
+.album_title h3 {
+  color: rgb(255, 255, 255);
+}
+.album_title h4 {
+  color: rgba(255, 255, 255, 0.5);
+}
 .overlay {
   width: 100%;
   height: 100%;
